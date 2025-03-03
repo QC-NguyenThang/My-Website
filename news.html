@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>QC Nguyễn Thắng - Chi Tiết Tin Tức</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Công Ty Quảng Cáo Nguyễn Thắng" name="keywords">
+    <meta content="Thiết kế và thi công bảng quảng cáo chuyên nghiệp" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS Libraries -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/slick/slick.css" rel="stylesheet">
+    <link href="lib/slick/slick-theme.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Top Bar Start -->
+        <div class="top-bar">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="logo">
+                            <a href="index.html">
+                                <h1>QC Nguyễn Thắng</h1>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-7 d-none d-lg-block">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="top-bar-item">
+                                    <div class="top-bar-icon">
+                                        <i class="flaticon-calendar"></i>
+                                    </div>
+                                    <div class="top-bar-text">
+                                        <h3>Giờ mở cửa</h3>
+                                        <p>Thứ hai - thứ bảy, 8:00 - 19:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="top-bar-item">
+                                    <div class="top-bar-icon">
+                                        <i class="flaticon-call"></i>
+                                    </div>
+                                    <div class="top-bar-text">
+                                        <h3>Hotline</h3>
+                                        <p>086.2222.536</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="top-bar-item">
+                                    <div class="top-bar-icon">
+                                        <i class="flaticon-send-mail"></i>
+                                    </div>
+                                    <div class="top-bar-text">
+                                        <h3>Email</h3>
+                                        <p>qcnthang@gmail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Top Bar End -->
+
+        <!-- Nav Bar Start -->
+        <div class="nav-bar">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+                    <a href="#" class="navbar-brand">MENU</a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav mr-auto">
+                            <a href="index.html" class="nav-item nav-link">Trang chủ</a>
+                            <a href="about.html" class="nav-item nav-link">Giới thiệu</a>
+                            <a href="service.html" class="nav-item nav-link">Dịch vụ</a>
+                            <a href="portfolio.html" class="nav-item nav-link">Hình ảnh</a>
+                            <a href="single.html" class="nav-item nav-link active">Blog</a>
+                            <a href="contact.html" class="nav-item nav-link">Liên hệ</a>
+                        </div>
+                        <div class="ml-auto">
+                            <a class="btn" href="#">Nhận báo giá</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Nav Bar End -->
+
+        <!-- Page Header Start -->
+        <div class="page-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Chi Tiết Tin Tức</h2>
+                    </div>
+                    <div class="col-12">
+                        <a href="index.html">Trang chủ</a>
+                        <a href="single.html">Blog</a>
+                        <a href="#">Chi Tiết</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Page Header End -->
+
+        <!-- Single Post Start -->
+        <div class="single">
+            <div class="container">
+                <div class="row" style="text-align: justify;">
+                    <div class="col-lg-9">
+                        <div class="single-content wow fadeInUp" id="singleContent">
+                            <img id="singleImage" src="img/single.jpg" alt="Hình ảnh bài viết" />
+                            <h2 id="singleTitle"></h2>
+                            <div id="singleContentText"></div>
+                        </div>
+                        <div class="single-tags wow fadeInUp" id="singleTags">
+                            <!-- Tags sẽ được load bằng JS -->
+                        </div>
+                        <div class="single-bio wow fadeInUp">
+                            <div class="single-bio-img">
+                                <img id="authorImage" src="img/user.jpg" alt="Tác giả" />
+                            </div>
+                            <div class="single-bio-text">
+                                <h3 id="authorName"></h3>
+                                <p id="authorBio"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="sidebar-widget wow fadeInUp">
+                            <h2 class="widget-title">Bài Viết Liên Quan</h2>
+                            <div class="recent-post" id="relatedPosts">
+                                <!-- Các bài viết liên quan sẽ được load bằng JS -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Single Post End -->
+
+        <!-- Footer Start -->
+        <div class="footer wow fadeIn" data-wow-delay="0.3s">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="footer-contact">
+                            <h2>Công ty QC Nguyễn Thắng</h2>
+                            <p><i class="fa fa-map-marker-alt"></i>123 Street, New York, USA</p>
+                            <p><i class="fa fa-phone-alt"></i>086.2222.536</p>
+                            <p><i class="fa fa-envelope"></i>qcnthang@gmail.com</p>
+                            <div class="footer-social">
+                                <a href=""><i class="fab fa-twitter"></i></a>
+                                <a href=""><i class="fab fa-facebook-f"></i></a>
+                                <a href=""><i class="fab fa-youtube"></i></a>
+                                <a href=""><i class="fab fa-instagram"></i></a>
+                                <a href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="footer-link">
+                            <h2>Dịch vụ của chúng tôi</h2>
+                            <a href="">Lắp bảng quảng cáo</a>
+                            <a href="">Thi công bảng quảng cáo</a>
+                            <a href="">Tư vấn thiết kế</a>
+                            <a href="">Trang trí bảng quảng cáo</a>
+                            <a href="">Hỗ trợ bảng quảng cáo</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="newsletter">
+                            <h2>Hỗ trợ</h2>
+                            <p>
+                                Nếu bạn có thắc mắc cần hỗ trợ, hãy liên hệ với chúng tôi
+                            </p>
+                            <div class="form">
+                                <input class="form-control" placeholder="Email của bạn">
+                                <button class="btn">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container copyright">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>© <a href="#">Quảng cáo Nguyễn Thắng</a>, All Right Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/slick/slick.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <!-- Custom Script to Load News Detail -->
+    <script>
+        let newsData = [];
+
+        // Hàm phân tích dữ liệu từ news.txt
+        function parseNewsData(data) {
+            const sections = data.split('---').map(section => section.trim()).filter(section => section);
+            return sections.map(section => {
+                const lines = section.split('\n');
+                const obj = {};
+                let currentKey = '';
+                lines.forEach(line => {
+                    if (line.includes(': ')) {
+                        const [key, value] = line.split(': ');
+                        obj[key.trim()] = value.trim();
+                        currentKey = key.trim();
+                    } else if (line.trim()) {
+                        obj[currentKey] = (obj[currentKey] || '') + '\n' + line.trim();
+                    }
+                });
+                return obj;
+            });
+        }
+
+        // Hàm load chi tiết bài viết
+        function loadPost(post) {
+            document.getElementById('singleImage').src = post.image || 'img/single.jpg';
+            document.getElementById('singleTitle').textContent = post.title || '';
+            const contentParagraphs = (post.content || '').split('\n').filter(p => p);
+            document.getElementById('singleContentText').innerHTML = contentParagraphs.map(p => `<p>${p}</p>`).join('');
+            document.getElementById('singleTags').innerHTML = (post.tags || '').split(', ').map(tag => `<a href="#">${tag}</a>`).join('') || '';
+            document.getElementById('authorImage').src = post.author_image || 'img/user.jpg';
+            document.getElementById('authorName').textContent = post.author || '';
+            document.getElementById('authorBio').textContent = post.author_bio || '';
+        }
+
+        // Load dữ liệu từ news.txt khi trang được mở
+        document.addEventListener('DOMContentLoaded', function () {
+            fetch('news.txt')
+                .then(response => response.text())
+                .then(data => {
+                    newsData = parseNewsData(data);
+                    // Lấy id từ URL
+                    const urlParams = new URLSearchParams(window.location.search);
+                    const postId = urlParams.get('id');
+                    const post = newsData.find(p => p.id === postId) || newsData[0]; // Mặc định là bài đầu tiên nếu không có id
+                    loadPost(post);
+                })
+                .catch(error => console.error('Error loading news.txt:', error));
+        });
+
+
+        // Hàm load bài viết liên quan
+        function loadRelatedPosts(currentPostId) {
+            const relatedPostsDiv = document.getElementById('relatedPosts');
+            relatedPostsDiv.innerHTML = '';
+            const filteredPosts = newsData.filter(post => post.id !== currentPostId).slice(0, 10); // Lấy 10 bài khác bài hiện tại
+            filteredPosts.forEach(post => {
+                const summary = (post.content || '').split('\n')[0];
+                relatedPostsDiv.innerHTML += `
+            <div class="post-item">
+                <div class="post-img">
+                    <img src="${post.image || 'img/default.jpg'}" alt="${post.title}" />
+                </div>
+                <div class="post-text">
+                    <a href="news.html?id=${post.id}">${post.title}</a>
+                    <div class="post-meta">
+                        <p>By <a href="#">${post.author}</a></p>
+                    </div>
+                </div>
+            </div>
+        `;
+            });
+        }
+
+        // Cập nhật hàm loadPost để gọi loadRelatedPosts
+        function loadPost(post) {
+            document.getElementById('singleImage').src = post.image || 'img/single.jpg';
+            document.getElementById('singleTitle').textContent = post.title || '';
+            const contentParagraphs = (post.content || '').split('\n').filter(p => p);
+            document.getElementById('singleContentText').innerHTML = contentParagraphs.map(p => `<p>${p}</p>`).join('');
+            document.getElementById('singleTags').innerHTML = (post.tags || '').split(', ').map(tag => `<a href="#">${tag}</a>`).join('') || '';
+            document.getElementById('authorImage').src = post.author_image || 'img/user.jpg';
+            document.getElementById('authorName').textContent = post.author || '';
+            document.getElementById('authorBio').textContent = post.author_bio || '';
+            loadRelatedPosts(post.id); // Gọi hàm load bài viết liên quan
+        }
+
+        // Load dữ liệu từ news.txt khi trang được mở (giữ nguyên)
+        document.addEventListener('DOMContentLoaded', function () {
+            fetch('news.txt')
+                .then(response => response.text())
+                .then(data => {
+                    newsData = parseNewsData(data);
+                    const urlParams = new URLSearchParams(window.location.search);
+                    const postId = urlParams.get('id');
+                    const post = newsData.find(p => p.id === postId) || newsData[0];
+                    loadPost(post);
+                })
+                .catch(error => console.error('Error loading news.txt:', error));
+        });
+    </script>
+</body>
+
+</html>
