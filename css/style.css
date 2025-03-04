@@ -90,7 +90,7 @@ a:focus {
 .top-bar .logo h1 {
     margin: 0;
     color: #030f27;
-    font-size: 60px;
+    font-size: 40px;
     line-height: 60px;
     font-weight: 700;
 }
@@ -773,7 +773,7 @@ a:focus {
     margin: 0;
     padding: 0 15px 0 25px;
     width: calc(100% - 60px);
-    font-size: 20px;
+    font-size: 13px;
     font-weight: 700;
     color: #fdbe33;
     text-align: left;
@@ -1832,20 +1832,48 @@ a:focus {
     background: #030f27;
 }
 
+.portfolio .portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    /* Đảm bảo các cột có chiều cao bằng nhau */
+}
+
+.portfolio .portfolio-item {
+    flex: 0 0 calc(33.3333% - 20px);
+    /* 3 cột với khoảng cách 20px */
+    max-width: calc(33.3333% - 20px);
+    margin-bottom: 30px;
+    padding: 0 10px;
+    /* Khoảng cách trong cột */
+}
+
 .portfolio .portfolio-warp {
     position: relative;
     width: 100%;
     text-align: center;
-    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    /* Thêm viền để thấy rõ hơn (có thể bỏ nếu không cần) */
+    overflow: hidden;
 }
 
 .portfolio .portfolio-img {
     position: relative;
     overflow: hidden;
+    width: 100%;
+    padding-top: 75%;
+    /* Tỷ lệ 4:3, có thể thay 56.25% cho 16:9 */
 }
 
 .portfolio .portfolio-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Đảm bảo hình ảnh vừa khung */
     transition: .3s;
 }
 
@@ -1859,13 +1887,16 @@ a:focus {
     height: 100%;
     top: 0;
     left: 0;
-    padding: 30px;
+    padding: 20px;
+    /* Giảm padding để tránh tràn */
     display: flex;
     align-items: center;
     justify-content: center;
     background: rgba(3, 15, 39, .7);
     transition: .5s;
     opacity: 0;
+    text-align: center;
+    /* Căn giữa văn bản */
 }
 
 .portfolio .portfolio-warp:hover .portfolio-overlay {
@@ -1875,6 +1906,8 @@ a:focus {
 .portfolio .portfolio-overlay p {
     margin: 0;
     color: #ffffff;
+    font-size: 14px;
+    /* Điều chỉnh kích thước chữ */
 }
 
 .portfolio .portfolio-text {
@@ -1883,21 +1916,23 @@ a:focus {
     height: 60px;
     background: #030f27;
     overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
 }
 
 .portfolio .portfolio-text h3 {
     margin: 0;
     padding: 0 15px 0 25px;
     width: calc(100% - 60px);
-    font-size: 20px;
+    font-size: 18px;
+    /* Giảm kích thước chữ để tránh tràn */
     font-weight: 700;
     color: #fdbe33;
     text-align: center;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+    white-space: normal;
+    /* Cho phép xuống dòng */
+    overflow: visible;
+    /* Hiển thị đầy đủ */
+    text-overflow: initial;
+    /* Xóa dấu ba chấm */
 }
 
 .portfolio .portfolio-warp a.btn {
